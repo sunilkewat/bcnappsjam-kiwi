@@ -14,3 +14,25 @@ ul.mainMenu li{
 	margin-top:50px;
 	margin-bottom:50px;
 }
+
+
+.queuesHeader img{
+	float:left;
+	display:block;
+}
+
+.queuesHeader p{
+	float:left;
+	font-size:48px;
+	color:white;
+	width:200px;
+	/*padding-left:20px;*/
+	display:block;
+}
+
+ul.queuesList {
+	clear:left;
+	list-style:none;
+	width:100%;
+	background:#42a881;
+}
