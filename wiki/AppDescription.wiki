@@ -48,3 +48,6 @@ Ganancias de la aplicación sobre el sistema actual
 Libera al usuario de tener que permanecer físicamente en la cola.
 Evita la pérdida del ticket que identifica su turno.
 Avisa al usuario cuando quedan, un número de turnos configurable, antes del suyo, disminuyendo las posibilidades de que se le pase.
+
+
+NOTA: Este texto también lo puedes encontrar en un documento público, en: https://docs.google.com/document/d/1YI5teqaUPXozTN3ZaAd443zgua-c-aarIDwEs4Im08w/edit
