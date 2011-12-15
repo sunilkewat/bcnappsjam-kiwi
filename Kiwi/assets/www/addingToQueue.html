@@ -13,24 +13,21 @@
 
 				<ul class="mainMenu">
 					<li><a href="#"><img src="img/NFCBtn.png"/></a></li>
-					<li><a href="#"><img src="img/QRCodeBtn.png"/></a></li>
+					<li><a href="#" id="readQR"><img src="img/QRCodeBtn.png"/></a></li>
 				</ul>
-				
-				
-				
-				<button type="button" data-theme="a" id="readQR">Leer QR</button>
-
 			</div><!-- /content -->
 			
 
+			<script type="text/javascript" src="js/barcodescanner.js"></script>			
+			<script type="text/javascript">				
 			
-			<script type="text/javascript">
 				//Page interaction
 				$(function() {
 					$('#readQR').click(function() {
 						//QR code reader plugin
 						window.plugins.barcodeScanner.scan(function(result) {
-							alert("We got a barcode\n" + "Result: " + result.text + "\n" + "Format: " + result.format + "\n" + "Cancelled: " + result.cancelled);
+							//alert("We got a barcode\n" + "Result: " + result.text + "\n" + "Format: " + result.format + "\n" + "Cancelled: " + result.cancelled);
+							window.location.href("/trunDetails.html");
 						}, function(error) {
 							alert("Scanning failed: " + error);
 						});
