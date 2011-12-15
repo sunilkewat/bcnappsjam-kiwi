@@ -20,6 +20,7 @@ ul.mainMenu li{
 .queuesHeader img{
 	float:left;
 	display:block;
+	margin-bottom:10px;
 }
 
 .queuesHeader p{
@@ -29,6 +30,10 @@ ul.mainMenu li{
 	width:200px;
 	/*padding-left:20px;*/
 	display:block;
+}
+
+ul.queuesList {
+	margin-top:15px;
 }
 
 ul.queuesList, ul.queuesList li {
@@ -50,7 +55,7 @@ ul.queuesList li {
 
 ul.queuesList li div.left{
 	float:left;
-	width:365px;
+	width:350px;
 	color:white;
 	text-decoration: none;
 	padding:5px;
