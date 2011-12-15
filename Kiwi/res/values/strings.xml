@@ -3,5 +3,6 @@
 
     <string name="hello">Hello World, KiwiActivity!</string>
     <string name="app_name">Kiwi</string>
+    <string name="share_name">EncodeActivity</string>
 
 </resources>

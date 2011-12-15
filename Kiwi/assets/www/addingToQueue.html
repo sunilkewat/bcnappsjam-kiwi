@@ -10,24 +10,34 @@
 		<div data-role="page">
 			
 			<div data-role="content">
+
 				<ul class="mainMenu">
 					<li><a href="#"><img src="img/NFCBtn.png"/></a></li>
 					<li><a href="#"><img src="img/QRCodeBtn.png"/></a></li>
 				</ul>
 				
 				
+				
+				<button type="button" data-theme="a" id="readQR">Leer QR</button>
+
 			</div><!-- /content -->
 			
-			
-				<script type="text/javascript">
-					document.addEventListener("backbutton", onBackKeyDown, false);
 
-					// PhoneGap is loaded and it is now safe to make calls PhoneGap methods
-					//
-					function onBackKeyDown() {
-						alert("test");
-					}
-		</script>
+			
+			<script type="text/javascript">
+				//Page interaction
+				$(function() {
+					$('#readQR').click(function() {
+						//QR code reader plugin
+						window.plugins.barcodeScanner.scan(function(result) {
+							alert("We got a barcode\n" + "Result: " + result.text + "\n" + "Format: " + result.format + "\n" + "Cancelled: " + result.cancelled);
+						}, function(error) {
+							alert("Scanning failed: " + error);
+						});
+					});
+				});
+</script>
+
 		</div><!-- /page -->
 	</body>
 </html>

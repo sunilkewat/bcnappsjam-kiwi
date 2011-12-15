@@ -16,9 +16,19 @@
 
 			// PhoneGap is loaded and it is now safe to make calls PhoneGap methods
 			//
-			function onDeviceReady() {
+
+				function onDeviceReady() {
+					//PhoneGap lifecycle events
+					document.addEventListener("backbutton", onBackKeyDown, false);
+				}
+
 				
-			}
+				/* PhoneGap lifecycle events */
+				function onBackKeyDown() {
+					window.history.back();
+				}
+				/****************************/
+
 		</script>
 	</head>
 	<body>
