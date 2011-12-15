@@ -6,6 +6,7 @@
 		<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 		<!-- styles -->
 		<link rel="stylesheet" href="styles/jquery.mobile-1.0.css"/>
+		<link rel="stylesheet" href="styles/style.css"/>
 		<!-- scripts -->
 		<script type="text/javascript" charset="utf-8" src="js/phonegap-1.2.0.js"></script>
 		<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
@@ -22,14 +23,23 @@
 	</head>
 	<body>
 		<div data-role="page" id="home">
-			<div data-role="header">
+			<!-- <div data-role="header">
 				<h1>KIWI</h1>
 			</div><!-- /header -->
 			<div data-role="content">
-				<a href="addingToQueue.html">Unirse a Cola</a>
-				<a href="checkQueues.html"></a>
+				<ul id="mainMenu">
+					<li>
+						<a href="addingToQueue.html"><img src="img/nouTornBtn.png" /></a>
+					</li>
+					<li>
+						<a href="checkQueues.html"><img src="img/cuesBtn.png"/></a>
+					</li>
+				</ul>
+				
+				
 			</div><!-- /content -->
-			<div data-role="footer"></div><!-- /footer -->
+			
+			<!--  <div data-role="footer"></div><!-- /footer -->
 		</div>
 		
 	</body>
