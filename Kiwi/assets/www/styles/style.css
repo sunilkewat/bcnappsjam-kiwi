@@ -1,5 +1,6 @@
 .ui-page{
 	background: #00687d;
+	font-family:"Roboto";
 }
 
 ul.mainMenu{
@@ -40,17 +41,25 @@ ul.queuesList, ul.queuesList li {
 	float:left;
 }
 
+ul.queuesList li {
+	padding-top:5px;
+	padding-bottom:5px;
+	border-top: 2px solid #00687d;
+}
+
 
 ul.queuesList li div.left{
 	float:left;
 	width:365px;
 	color:white;
 	text-decoration: none;
+	padding:5px;
 }
 ul.queuesList li div.right{
 	float:right;
 	font-size:72px;
 	color:#65d97d;
+	padding:5px;
 }
 .left span{
 	font-size:18px;
