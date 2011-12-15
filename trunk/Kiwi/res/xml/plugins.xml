@@ -16,4 +16,7 @@
     <plugin name="Temperature" value="com.phonegap.TempListener"/>
     <plugin name="FileTransfer" value="com.phonegap.FileTransfer"/>
     <plugin name="Capture" value="com.phonegap.Capture"/>
+    
+    <!-- PhoneGap third party plugins -->
+    <plugin name="BarcodeScanner" value="com.phonegap.plugins.barcodescanner.BarcodeScanner"/>
 </plugins>
