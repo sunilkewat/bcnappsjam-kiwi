@@ -27,7 +27,7 @@
 						//QR code reader plugin
 						window.plugins.barcodeScanner.scan(function(result) {
 							//alert("We got a barcode\n" + "Result: " + result.text + "\n" + "Format: " + result.format + "\n" + "Cancelled: " + result.cancelled);
-							window.location.href("/trunDetails.html");
+							$.mobile.changePage("turnDetails.html");
 						}, function(error) {
 							alert("Scanning failed: " + error);
 						});
